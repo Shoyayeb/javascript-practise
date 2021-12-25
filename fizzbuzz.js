@@ -1,24 +1,21 @@
-// var i = 0;
-// while (i <= 100) {
-//     console.log(i);
-//     if (i % 3 === 0) {
-//         console.log("Fizz");
-//     } else if (i % 5 === 0) {
-//         console.log("Buzz");
-//     } else if (i % 15 === 0) {
-//         console.log("FizzBuzz");
-//     }
-//     i++;
-// }
+// create an array of numbers from 1 to 100
+// if the number is evenly divisible by 3 then insert Fizz 
+// if the number is evenly divisible by 5 then insert Buzz 
+// but if the number is evenly divisible by 15 then insert FizzBuzz 
+
+
+const array = [];
 
 for (let i = 0; i <= 100; i++) {
     if (i % 3 === 0 && i % 15 !== 0) {
-        console.log("Fizz");
+        array.push("Fizz");
     } else if (i % 5 === 0 && i % 15 !== 0) {
-        console.log("Buzz");
+        array.push("Buzz");
     } else if (i % 15 === 0) {
-        console.log("FizzBuzz");
+        array.push("FizzBuzz");
     } else {
-        console.log(i);
+        array.push(i);
     }
 }
+
+console.log(array);
